@@ -1,0 +1,13 @@
+#!/bin/bash
+pliki=$(ls -1)
+IFS=$'\n'
+for i in $pliki;
+do
+fullname="$(basename $i)"
+ext="${fullname##*.}"
+without="${fullname%.*}"
+if [ $ext = c ]; then
+	x=$(cc $fullname -o $without)
+	echo $x
+fi
+done

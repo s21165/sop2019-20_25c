@@ -1,0 +1,8 @@
+#!/bin/bash
+input=${1?Error: no args}
+
+if [ $# -lt 2 ]; then
+    echo "Nie podano wystarczającej ilości argumentów, minimum to 2"
+    else
+echo $input
+fi

@@ -1,0 +1,31 @@
+X=tekst
+echo $X
+bash
+echo $X
+
+zmienna X nie jest wyswietlana w nowym bashu, mozna było by to zmienic dzięki export
+
+
+
+X=Tekst ("dłuższy tekst")
+echo $X
+
+
+" - interpretuje znaki
+' - wypisuję wszystko 
+
+Cw3
+
+
+
+PATH 		-lokalizacja skryptu
+RANDOM 		-pseudolosowe liczby
+PWD 		-miejsce w ktorym został włączony skrypt 
+PS1		- przed znakiem zachęty
+USER		-nazwa aktywnego użytkownika
+HOSTNAME	-nazwa serwera
+OSTYPE		-rodzaj dystrybucji 
+
+
+Cw4
+

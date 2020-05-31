@@ -1,0 +1,6 @@
+#!/bin/bash
+fileCount=$(ls -lp | grep -vc /)
+if [ $fileCount -gt 5 ]; then
+	echo Jest wiecej niz 5 plikow w katalogu
+fi
+

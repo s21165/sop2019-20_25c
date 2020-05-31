@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -e config2.cfg ]; then
+	. $PWD/config.cfg
+   	 echo $var1
+else
+	input=${1?Error: no args and config.cfg do not exist}
+	. $PWD/$input
+fi

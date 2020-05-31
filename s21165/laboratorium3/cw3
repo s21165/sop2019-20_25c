@@ -1,0 +1,14 @@
+#!/bin/bash
+filename="$(basename $0)"
+name="${filename%.*}"
+extension="$filename##*.}"
+
+echo "Filename: ${filename}"
+echo "Name:${name}"
+echo "Extension: ${extension}"
+
+if [ "${extension}" != "sh" ]; then
+	echo Rozszerzenie nie znalezione. Zmieniam nazwe
+	mv $0 ${0}.sh
+fi
+
